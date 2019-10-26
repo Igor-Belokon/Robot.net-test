@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0);
+}
+.flex-element {
+  margin: auto;
+}
+.flex-log {
+  display: flex;
+  flex-direction: column;
+}
+.massage-form {
+  background-color: white;
+}
