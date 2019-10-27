@@ -1,3 +1,9 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -10,6 +16,138 @@
   display: flex;
   flex-direction: column;
 }
+.log {
+  border: white solid;
+  border-radius: 5px;
+}
 .massage-form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.form-style {
   background-color: white;
+}
+.flex-nout {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: space-around;
+}
+.nout-img {
+  border: 3px black solid;
+  border-bottom: rgba(0, 0, 0, 0);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 50%;
+  height: 50%;
+}
+.OSBB {
+  margin-top: 20px;
+}
+.OSBB2 {
+  margin-left: 70px;
+}
+.message-style {
+  color: white;
+}
+.form2 {
+  width: 30%;
+}
+.map {
+  padding-bottom: 0px;
+}
+.futer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px rgba(109, 101, 101, 0.644) solid;
+  padding: 20px;
+}
+.input-style {
+  border: none;
+  background: transparent;
+  border-bottom: 1px rgba(136, 131, 131, 0.37) solid;
+}
+
+#fl {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.slider {
+  position: relative;
+  height: 50.5vh;
+  width: 100%;
+  list-style-type: none;
+}
+.item h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.prev,
+.next {
+  z-index: 5;
+  font-size: 60px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px 20px;
+}
+.prev {
+  background-color: white;
+}
+.next {
+  background-color: white;
+}
+.item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+.show {
+  opacity: 1;
+  z-index: 3;
+}
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+.dots {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #999;
+  z-index: 5;
+  margin: 0 7px;
+}
+.item:nth-of-type(1) {
+  background-color: white;
+}
+.item:nth-of-type(2) {
+  background-color: white;
+}
+.item:nth-of-type(3) {
+  background-color: white;
+}
+.slid-element {
+  flex-grow: 1;
 }

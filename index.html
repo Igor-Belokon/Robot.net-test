@@ -58,25 +58,25 @@
         }
 
         .body_slides li:nth-child(1) {
-            background-image: url(https://3.bp.blogspot.com/-QWleZT7cwgs/W0NSeV3cdBI/AAAAAAAAAYk/m1NQ1_IbY2MWeYJXrSvKjYuZHFpUzvfigCLcBGAs/s1600/pexels-photo-399629.jpeg)
+            background-image: url(image/exempl2.jpg)
         }
 
         .body_slides li:nth-child(2) {
             -webkit-animation-delay: 6.0s;
             -moz-animation-delay: 6.0s;
-            background-image: url(http://3.bp.blogspot.com/-qVTGNxbqgXg/VYXcRD868NI/AAAAAAAAAH8/yuVildXOTcs/s1600/thief-garrett-eidos-montreal-5881.jpg)
+            background-image: url(image/exempl3.jpg)
         }
 
         .body_slides li:nth-child(3) {
             -webkit-animation-delay: 12.0s;
             -moz-animation-delay: 12.0s;
-            background-image: url(https://3.bp.blogspot.com/-UX645LLIJvo/W0NRhVD2rCI/AAAAAAAAAYQ/KDGWPte1qfkVLf-qR7cage7HA1xYBJfBgCLcBGAs/s1600/most-perila-pautina.jpg)
+            background-image: url(image/exempl2.jpg)
         }
 
         .body_slides li:nth-child(4) {
             -webkit-animation-delay: 18.0s;
             -moz-animation-delay: 18.0s;
-            background-image: url(https://3.bp.blogspot.com/-qjiTvYoQ75w/W0NSExiqwSI/AAAAAAAAAYg/WL5CmFm5e6QPemTMJH9enn8iK2B5tRPXwCEwYBhgL/s1600/pexels-photo-63943-large.jpeg)
+            background-image: url(image/exempl1.jpg)
         }
 
         @-webkit-keyframes anim_slides {
@@ -126,10 +126,10 @@
     <!-- хедер -->
     <nav class="navbar navbar-expand-lg navbar-light  flex-container">
         <a class="navbar-brand" href="#">
-            <img src="imag/photo_2019-10-26_19-09-31.jpg" width="50" height="50" />
+            <img src="image/photo_2019-10-26_19-09-31.jpg" width="45" height="45" class="log" />
             <a class="flex-log ">
-                <i>OSBB Solution</i>
-                <i>by Robot.net</i>
+                <i class="message-style">OSBB Solution</i>
+                <i class="message-style">by Robot.net</i>
             </a>
         </a>
 
@@ -140,20 +140,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="flex-element">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Главная</a>
+                    <li class="nav-item message-style">
+                        <a class="nav-link " href="#" style="color: white;">Главная</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новости</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#" style="color: white;">Новости</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#" style="color: white;">Контакты</a>
                     </li>
                     <li class="nav-item dropdown">
 
             </div>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle message-style" href="#" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Язык
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -165,85 +165,146 @@
             </ul>
         </div>
     </nav>
-    <!-- Карусель -->
-    <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imag/exempl1.jpg" class="d-block w-100" alt="..." width="100%" height="450">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imag/exempl2.jpg" class="d-block w-100" alt="..." width="100%" height="450">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imag/exempl3.jpg" class="d-block w-100" alt="..." width="100%" height="450">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+    <!-- приветствие -->
+    <div class="flex-nout OSBB">
+        <div>
+            <h1 class="message-style OSBB">ОСББ "Образцовый" -</h1>
+            <h1 class="message-style OSBB OSBB2">Демо Версия</h1>
         </div>
     </div>
+    <div class="flex-nout OSBB">
+        <button type="button" class="btn btn-danger">Отправить</button>
+    </div>
+    <div class="flex-nout message-style OSBB">Вход</div>
+    <!-- ноут -->
+    <div class="flex-nout OSBB ">
+        <img src="image/123.jpg" class="nout-img">
+    </div>
+    <!-- Карусель -->
+    <div id="fl" >
+            
+            <div class="slider">
+              <div class="item show">
+                <div class="massage-form" >
+                  <img src="image/exempl1.jpg" width="300px" height="300px" style="border-radius: 5px;" class="slid-element"/>
+                  <div class="slid-element">
+                    <h5>О нас</h5>
+                    <p>
+                      Здесь вы можите найти информацию о нашем доме,<br />
+                      разобраться в услугах и тарифах, задать вопрос<br />
+                      управляющему домом,посмотреть детализацию<br />
+                      начислений в личном кабинете.
+                    </p>
+                    <button type="button" class="btn btn-danger">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item"><h1>Заголовок слайда 2</h1></div>
+              <div class="item"><h1>Заголовок слайда 3</h1></div>
+         
+              
+            </div>
+           
+          </div>
+          <div class="slider-dots" style="padding-bottom: 20px;">
+                <a class="prev"  onclick="minusSlide()">&#10094;</a>
+            <div class="dots" ></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+          <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+      
+          <script type="text/javascript">
+            var slides = document.querySelectorAll(".slider .item");
+            var allDots = document.querySelectorAll(".slider-dots .dots");
+            var curentSlide = 0;
+      
+            function curentDot() {
+              for (var i = 0; i < allDots.length; i++) {
+                allDots[i].style.width = "11px";
+                allDots[i].style.height = "11px";
+                allDots[i].style.backgroundColor = "#999";
+              }
+      
+              allDots[curentSlide].style.width = "14px";
+              allDots[curentSlide].style.height = "14px";
+              allDots[curentSlide].style.backgroundColor = "#555";
+            }
+      
+            function plusSlide() {
+              slides[curentSlide].className = "item";
+              curentSlide += 1;
+              if (curentSlide >= slides.length) {
+                curentSlide = 0;
+              }
+              slides[curentSlide].className = "item show";
+              curentDot();
+            }
+      
+            function minusSlide() {
+              slides[curentSlide].className = "item";
+              curentSlide -= 1;
+              if (curentSlide == -1) {
+                curentSlide = slides.length - 1;
+              }
+              slides[curentSlide].className = "item show";
+              curentDot();
+            }
+          </script>
     <!-- карта -->
-    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+    <div id="map-container-google-1" class="z-depth-1-half map-container map"
+        style="height: 450px; padding-bottom: 0; ">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d661.2921274703888!2d34.992413029249434!3d48.47248129870322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3b2e8acd619%3A0xc6853362ce78fbd8!2z0YPQuy4g0J3QtdGB0YLQtdGA0L7QstCwLCAyMCwg0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1572112641850!5m2!1sru!2sua"
             width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
     </div>
     <!-- форма -->
-    <div class="massage-form">
+    <div class="form-style" style="padding-bottom: 15px; padding-top: 15px ;">
         <form>
+            <div class="massage-form">
+                <div class="form2">
+                    <div class="form-group  ">
+
+                        <input type="email" class="form-control input-style" id="exampleFormControlInput1"
+                            placeholder="Телефон*">
+                    </div>
+                    <div class="form-group ">
+
+                        <input type="email" class="form-control input-style" id="exampleFormControlInput1"
+                            placeholder="Имя">
+                    </div>
+                </div>
+                <div class="form2">
+                    <div class="form-group ">
+
+                        <input type="email" class="form-control input-style" id="exampleFormControlInput1"
+                            placeholder="Email*">
+                    </div>
+                    <div class="form-group ">
+
+                        <input type="email" class="form-control input-style" id="exampleFormControlInput1"
+                            placeholder="Фамилия">
+                    </div>
+                </div>
+            </div>
+
             <div class="form-group">
 
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Телефон*">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Сообщение"></textarea>
             </div>
-            <div class="form-group">
-
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Имя">
-            </div>
-            <div class="form-group">
-
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*">
-            </div>
-            <div class="form-group">
-
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия">
-            </div>
-
-    
-
-    <div class="form-group">
-
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Сообщение"></textarea>
+        </form>
+        <div class="massage-form ">
+            <button type="button" class="btn btn-danger">Отправить</button>
+        </div>
     </div>
-    </form>
-    <button type="button" class="btn btn-danger">Отправить</button>
-</div>
+    <!-- футер -->
+    <div class="futer">
+        <span>© 2019 OSBB Solution All rights reserved</span>
+        <span>+38 066 353 46 65 г.Днепр, ул.Нестерова 20</span>
+    </div>
 
-    
     <!-- скрипты бутстрапа -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
