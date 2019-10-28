@@ -128,31 +128,31 @@
         <a class="navbar-brand" href="#">
             <img src="image/photo_2019-10-26_19-09-31.jpg" width="45" height="45" class="log" />
             <a class="flex-log ">
-                <i class="message-style">OSBB Solution</i>
-                <i class="message-style">by Robot.net</i>
+                <i class="header-text">OSBB Solution</i>
+                <i class="header-text">by Robot.net</i>
             </a>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler   dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="flex-element">
+        <div class="collapse navbar-collapse header-style " id="navbarNavDropdown">
+            <div class="flex-element ">
                 <ul class="navbar-nav">
-                    <li class="nav-item message-style">
-                        <a class="nav-link " href="#" style="color: white;">Главная</a>
+                    <li class="nav-item dropdown-item message-style">
+                        <a class=" header-text" href="#">Главная</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#" style="color: white;">Новости</a>
+                    <li class="nav-item dropdown-item">
+                        <a class=" header-text" href="#">Новости</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#" style="color: white;">Контакты</a>
+                    <li class="nav-item dropdown-item">
+                        <a class=" header-text" href="#">Контакты</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="dropdown-item nav-item dropdown">
 
             </div>
-            <a class="nav-link dropdown-toggle message-style" href="#" id="navbarDropdownMenuLink"
+            <a class="nav-link dropdown-toggle  header-text" href="#" id="navbarDropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Язык
             </a>
@@ -164,6 +164,8 @@
             </li>
             </ul>
         </div>
+        
+           
     </nav>
     <!-- приветствие -->
     <div class="flex-nout OSBB">
@@ -173,7 +175,7 @@
         </div>
     </div>
     <div class="flex-nout OSBB">
-        <button type="button" class="btn btn-danger">Отправить</button>
+        <button type="button" class="btn btn-danger">Регистрация</button>
     </div>
     <div class="flex-nout message-style OSBB">Вход</div>
     <!-- ноут -->
@@ -181,76 +183,80 @@
         <img src="image/123.jpg" class="nout-img">
     </div>
     <!-- Карусель -->
-    <div id="fl" >
-            
-            <div class="slider">
-              <div class="item show">
-                <div class="massage-form" >
-                  <img src="image/exempl1.jpg" width="300px" height="300px" style="border-radius: 5px;" class="slid-element"/>
-                  <div class="slid-element">
+    <div id="fl">
+
+        <div class="slider">
+            <div class="item show">
+                <div class="massage-form" ">
+                  <img src=" image/exempl1.jpg" width="200px" height="200px" style="border-radius: 5px;" />
+                <div style="padding: 5px;">
                     <h5>О нас</h5>
                     <p>
-                      Здесь вы можите найти информацию о нашем доме,<br />
-                      разобраться в услугах и тарифах, задать вопрос<br />
-                      управляющему домом,посмотреть детализацию<br />
-                      начислений в личном кабинете.
+                        Здесь вы можите найти информацию о нашем доме,<br />
+                        разобраться в услугах и тарифах, задать вопрос<br />
+                        управляющему домом,посмотреть детализацию<br />
+                        начислений в личном кабинете.
                     </p>
                     <button type="button" class="btn btn-danger">Подробнее</button>
-                  </div>
                 </div>
-              </div>
-              <div class="item"><h1>Заголовок слайда 2</h1></div>
-              <div class="item"><h1>Заголовок слайда 3</h1></div>
-         
-              
             </div>
-           
-          </div>
-          <div class="slider-dots" style="padding-bottom: 20px;">
-                <a class="prev"  onclick="minusSlide()">&#10094;</a>
-            <div class="dots" ></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-          <a class="next" onclick="plusSlide()">&#10095;</a>
         </div>
-      
-          <script type="text/javascript">
-            var slides = document.querySelectorAll(".slider .item");
-            var allDots = document.querySelectorAll(".slider-dots .dots");
-            var curentSlide = 0;
-      
-            function curentDot() {
-              for (var i = 0; i < allDots.length; i++) {
+        <div class="item">
+            <h1>Заголовок слайда 2</h1>
+        </div>
+        <div class="item">
+            <h1>Заголовок слайда 3</h1>
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="slider-dots" style="padding-bottom: 20px;">
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll(".slider .item");
+        var allDots = document.querySelectorAll(".slider-dots .dots");
+        var curentSlide = 0;
+
+        function curentDot() {
+            for (var i = 0; i < allDots.length; i++) {
                 allDots[i].style.width = "11px";
                 allDots[i].style.height = "11px";
                 allDots[i].style.backgroundColor = "#999";
-              }
-      
-              allDots[curentSlide].style.width = "14px";
-              allDots[curentSlide].style.height = "14px";
-              allDots[curentSlide].style.backgroundColor = "#555";
             }
-      
-            function plusSlide() {
-              slides[curentSlide].className = "item";
-              curentSlide += 1;
-              if (curentSlide >= slides.length) {
+
+            allDots[curentSlide].style.width = "14px";
+            allDots[curentSlide].style.height = "14px";
+            allDots[curentSlide].style.backgroundColor = "#555";
+        }
+
+        function plusSlide() {
+            slides[curentSlide].className = "item";
+            curentSlide += 1;
+            if (curentSlide >= slides.length) {
                 curentSlide = 0;
-              }
-              slides[curentSlide].className = "item show";
-              curentDot();
             }
-      
-            function minusSlide() {
-              slides[curentSlide].className = "item";
-              curentSlide -= 1;
-              if (curentSlide == -1) {
+            slides[curentSlide].className = "item show";
+            curentDot();
+        }
+
+        function minusSlide() {
+            slides[curentSlide].className = "item";
+            curentSlide -= 1;
+            if (curentSlide == -1) {
                 curentSlide = slides.length - 1;
-              }
-              slides[curentSlide].className = "item show";
-              curentDot();
             }
-          </script>
+            slides[curentSlide].className = "item show";
+            curentDot();
+        }
+    </script>
     <!-- карта -->
     <div id="map-container-google-1" class="z-depth-1-half map-container map"
         style="height: 450px; padding-bottom: 0; ">
@@ -260,9 +266,9 @@
 
     </div>
     <!-- форма -->
-    <div class="form-style" style="padding-bottom: 15px; padding-top: 15px ;">
+    <div class="form-style" >
         <form>
-            <div class="massage-form">
+            <div class="massage-form ">
                 <div class="form2">
                     <div class="form-group  ">
 
@@ -289,9 +295,9 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mass-form">
 
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                <textarea style="width: 65%;" class="form-control  " id="exampleFormControlTextarea1" rows="3"
                     placeholder="Сообщение"></textarea>
             </div>
         </form>
